@@ -1,0 +1,30 @@
+PODS:
+  - Realm (5.4.1):
+    - Realm/Headers (= 5.4.1)
+  - Realm/Headers (5.4.1)
+  - RealmSwift (5.4.1):
+    - Realm (= 5.4.1)
+  - SwipeCellKit (2.7.1)
+  - "UITextView+Placeholder (1.4.0)"
+
+DEPENDENCIES:
+  - RealmSwift
+  - SwipeCellKit
+  - "UITextView+Placeholder"
+
+SPEC REPOS:
+  trunk:
+    - Realm
+    - RealmSwift
+    - SwipeCellKit
+    - "UITextView+Placeholder"
+
+SPEC CHECKSUMS:
+  Realm: 7e887608ef1de2d0c3a33dd9b1449e08fc9d9807
+  RealmSwift: ef998d9b678fd74e047c56ef4d99d9b77e87c1eb
+  SwipeCellKit: 3972254a826da74609926daf59b08d6c72e619ea
+  "UITextView+Placeholder": d7b0c400921f66523f3a85d74f774512e14f6502
+
+PODFILE CHECKSUM: eee748528be0cde5fd103b6116df65e6708d141a
+
+COCOAPODS: 1.9.3

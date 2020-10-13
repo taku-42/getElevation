@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17503.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17502"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditViewController" customModule="ViewController" customModuleProvider="target">
+            <connections>
+                <outlet property="elevationLabel" destination="SbM-41-zKV" id="X1x-5n-MLO"/>
+                <outlet property="memoTextView" destination="Eh1-Mm-d7w" id="dQh-8U-51Y"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UCr-FS-oaM">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                    <color key="backgroundColor" red="0.44408208129999999" green="0.88229650260000003" blue="0.90255898239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xJa-4J-Icg">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <color key="backgroundColor" red="0.37739308589999998" green="0.92490403850000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="barTintColor" red="0.35992366079999999" green="0.88228875399999995" blue="0.90255421400000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <textAttributes key="titleTextAttributes">
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </textAttributes>
+                    <items>
+                        <navigationItem title="編集" id="ouB-3c-A3o">
+                            <barButtonItem key="leftBarButtonItem" title="キャンセル" id="zwA-0N-k9o">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="cancelButtonPressed:" destination="-1" id="BRh-8o-ZEy"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00.00m" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="SbM-41-zKV">
+                    <rect key="frame" x="16" y="144" width="382" height="74.5"/>
+                    <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="57"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="z2s-BL-s5v">
+                    <rect key="frame" x="16" y="338.5" width="382" height="40"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="HVK-wX-E3h">
+                            <rect key="frame" x="0.0" y="2.5" width="0.0" height="35.5"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </imageView>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Eh1-Mm-d7w">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textColor" systemColor="labelColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UkI-Jv-uQB" customClass="PositiveSimpleButton" customModule="ViewController" customModuleProvider="target">
+                    <rect key="frame" x="107" y="736" width="200" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="AhA-5i-d2V"/>
+                        <constraint firstAttribute="height" constant="70" id="DWp-jf-Ofi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="22"/>
+                    <state key="normal" title="保存する"/>
+                    <connections>
+                        <action selector="saveButtonPressed:" destination="-1" eventType="touchUpInside" id="L3t-NC-NSo"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.95680846500000005" green="1" blue="0.99353717230000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="SbM-41-zKV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="1oD-jM-Y1M"/>
+                <constraint firstItem="UCr-FS-oaM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4Ib-DP-bYO"/>
+                <constraint firstItem="xJa-4J-Icg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4nj-zG-a2L"/>
+                <constraint firstItem="xJa-4J-Icg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="F9L-vV-FEb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SbM-41-zKV" secondAttribute="trailing" constant="16" id="RCZ-LA-EfU"/>
+                <constraint firstItem="xJa-4J-Icg" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="TM0-gR-7VB"/>
+                <constraint firstAttribute="trailing" secondItem="UCr-FS-oaM" secondAttribute="trailing" id="Vw1-GF-Fo3"/>
+                <constraint firstItem="SbM-41-zKV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="c4k-wX-mjS"/>
+                <constraint firstItem="SbM-41-zKV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fed-S2-pAv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="z2s-BL-s5v" secondAttribute="trailing" constant="16" id="gcJ-gH-axt"/>
+                <constraint firstItem="UkI-Jv-uQB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lDU-qV-bTH"/>
+                <constraint firstItem="xJa-4J-Icg" firstAttribute="top" secondItem="UCr-FS-oaM" secondAttribute="bottom" id="mmD-5r-DD9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="UkI-Jv-uQB" secondAttribute="bottom" constant="56" id="pdi-0D-f3R"/>
+                <constraint firstItem="z2s-BL-s5v" firstAttribute="top" secondItem="SbM-41-zKV" secondAttribute="bottom" constant="120" id="tOL-eG-WZt"/>
+                <constraint firstItem="UCr-FS-oaM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tjJ-bt-mp5"/>
+                <constraint firstItem="z2s-BL-s5v" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="uYm-cz-vmv"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="89.732142857142847"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="UkI-Jv-uQB">
+            <size key="intrinsicContentSize" width="88" height="41"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

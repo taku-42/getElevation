@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="127" id="62r-X4-BF9" customClass="ElevationSumTableViewCell" customModule="ViewController">
+            <rect key="frame" x="0.0" y="0.0" width="460" height="127"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="62r-X4-BF9" id="oQ0-IU-Fl5">
+                <rect key="frame" x="0.0" y="0.0" width="460" height="127"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="nYy-wz-OZU">
+                        <rect key="frame" x="16" y="16" width="428" height="95"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" ambiguous="YES" text="合計獲得標高" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5SP-WS-tUc">
+                                <rect key="frame" x="162" y="0.0" width="104" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="1000000000000.0m" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="cme-Vx-2qg">
+                                <rect key="frame" x="0.0" y="40" width="428" height="55"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="42"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="nYy-wz-OZU" firstAttribute="centerX" secondItem="oQ0-IU-Fl5" secondAttribute="centerX" id="3e7-nZ-BZO"/>
+                    <constraint firstItem="nYy-wz-OZU" firstAttribute="leading" secondItem="oQ0-IU-Fl5" secondAttribute="leading" constant="16" id="ROR-Ca-gs7"/>
+                    <constraint firstAttribute="trailing" secondItem="nYy-wz-OZU" secondAttribute="trailing" constant="16" id="eB7-ZM-SQ9"/>
+                    <constraint firstAttribute="bottom" secondItem="nYy-wz-OZU" secondAttribute="bottom" constant="16" id="ppO-et-Rvg"/>
+                    <constraint firstItem="nYy-wz-OZU" firstAttribute="top" secondItem="oQ0-IU-Fl5" secondAttribute="top" constant="16" id="rnJ-z9-ngJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="UEt-kM-8le"/>
+            <connections>
+                <outlet property="bodyLabel" destination="cme-Vx-2qg" id="nzg-Gn-UIz"/>
+            </connections>
+            <point key="canvasLocation" x="117.39130434782609" y="92.745535714285708"/>
+        </tableViewCell>
+    </objects>
+</document>
